@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasselblad X2D 100C — Medium Format. Redefined.</title>
+  <meta name="description" content="Experience the Hasselblad X2D 100C. 100 megapixels of medium format perfection, machined aluminum body, 5-axis IBIS. Photography reimagined." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       LOADING SCREEN
+  ═══════════════════════════════════════════ -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-brand">HASSELBLAD</div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-bar-fill"></div>
+      </div>
+      <div class="loader-percent" id="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">HASSELBLAD</a>
+      <div class="nav-links">
+        <a href="#hero">X2D 100C</a>
+        <a href="#specs">Specifications</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#cta">Experience</a>
+      </div>
+      <div class="nav-hamburger" id="nav-hamburger">
+        <span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#hero">X2D 100C</a>
+    <a href="#specs">Specifications</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#cta">Experience</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Introducing</p>
+      <h1 class="hero-title reveal">X2D 100C</h1>
+      <p class="hero-subtitle reveal">100 Megapixels of Medium Format Perfection</p>
+    </div>
+    <div class="hero-image reveal">
+      <img src="/hero-camera.png" alt="Hasselblad X2D 100C" />
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-indicator-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SCROLL ANIMATION
+  ═══════════════════════════════════════════ -->
+  <section id="scroll-animation" class="scroll-container">
+    <div class="sticky-wrapper">
+      <canvas id="frame-canvas"></canvas>
+
+      <!-- Phase overlays -->
+      <div class="phase-overlay" id="phase-1">
+        <div class="phase-label">01</div>
+        <h2>100MP BSI CMOS</h2>
+        <p>A 43.8 × 32.9 mm back-side illuminated sensor delivering 11,656 × 8,742 pixels of extraordinary detail.</p>
+      </div>
+
+      <div class="phase-overlay" id="phase-2">
+        <div class="phase-label">02</div>
+        <h2>Machined Aluminum</h2>
+        <p>Every surface precision-machined from solid aluminum. 895 grams of Scandinavian craftsmanship.</p>
+      </div>
+
+      <div class="phase-overlay" id="phase-3">
+        <div class="phase-label">03</div>
+        <h2>5-Axis, 7-Stop IBIS</h2>
+        <p>In-body image stabilization that lets you shoot handheld in conditions that demand a tripod.</p>
+      </div>
+
+      <div class="phase-overlay" id="phase-4">
+        <div class="phase-label">04</div>
+        <h2>Medium Format.<br/>Redefined.</h2>
+        <p>Where Swedish heritage meets the future of digital imaging.</p>
+      </div>
+
+      <!-- Scroll progress indicator -->
+      <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SPECS
+  ═══════════════════════════════════════════ -->
+  <section id="specs">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Technical Excellence</p>
+      <h2 class="section-title reveal">Every Detail, Engineered</h2>
+
+      <div class="specs-grid">
+        <div class="spec-card reveal">
+          <div class="spec-value">100<span class="spec-unit">MP</span></div>
+          <div class="spec-label">Resolution</div>
+          <div class="spec-detail">11,656 × 8,742 pixels</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">43.8<span class="spec-unit">mm</span></div>
+          <div class="spec-label">Sensor Width</div>
+          <div class="spec-detail">Medium format BSI CMOS</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">7<span class="spec-unit">stops</span></div>
+          <div class="spec-label">Stabilization</div>
+          <div class="spec-detail">5-axis in-body IBIS</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">895<span class="spec-unit">g</span></div>
+          <div class="spec-label">Weight</div>
+          <div class="spec-detail">Including battery</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">3.6<span class="spec-unit">"</span></div>
+          <div class="spec-label">Touchscreen</div>
+          <div class="spec-detail">Tiltable OLED display</div>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-value">ISO<span class="spec-unit"> 64</span></div>
+          <div class="spec-label">Native ISO</div>
+          <div class="spec-detail">Expandable to 25,600</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════════ -->
+  <section id="gallery">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Shot on X2D 100C</p>
+      <h2 class="section-title reveal">See What 100 Megapixels Reveals</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-wide reveal">
+        <img src="/gallery-landscape.png" alt="Landscape photographed with Hasselblad X2D 100C" loading="lazy" />
+        <div class="gallery-caption">
+          <span>Iceland — 1/250s · f/5.6 · ISO 100</span>
+        </div>
+      </div>
+      <div class="gallery-item gallery-tall reveal">
+        <img src="/gallery-portrait.png" alt="Portrait photographed with Hasselblad X2D 100C" loading="lazy" />
+        <div class="gallery-caption">
+          <span>Stockholm — 1/125s · f/2.8 · ISO 200</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA
+  ═══════════════════════════════════════════ -->
+  <section id="cta">
+    <div class="cta-inner">
+      <p class="section-eyebrow reveal">The Next Chapter</p>
+      <h2 class="cta-title reveal">Experience the X2D 100C</h2>
+      <p class="cta-subtitle reveal">Begin your medium format journey.</p>
+      <a href="https://www.hasselblad.com/x2d" target="_blank" rel="noopener" class="cta-button reveal">
+        Explore on Hasselblad.com
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10h10m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">HASSELBLAD</div>
+      <div class="footer-links">
+        <a href="#">Cameras</a>
+        <a href="#">Lenses</a>
+        <a href="#">Stories</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Victor Hasselblad AB. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
