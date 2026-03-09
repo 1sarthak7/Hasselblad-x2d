@@ -355,6 +355,5 @@ Built with precision by [Sarthak Bhopale](https://github.com/1sarthak7).
 
 <sub>This is a portfolio/demonstration project and is not affiliated with or endorsed by Victor Hasselblad AB.</sub>
 <br/>
-<sub>Camera imagery and specifications are used for educational and demonstration purposes only.</sub>
 
 </div>
