@@ -138,7 +138,7 @@ The core experience. A `500vh` tall scroll container with a `position: sticky` c
 
 ### Specifications
 
-Clean grid layout with staggered reveal animations. Each card enters the viewport with a slight delay after the previous one.
+Clean grid layout with  reveal animations. Each card enters the viewport with a slight delay after the previous one.
 
 Six key specs: resolution, sensor width, stabilization, weight, touchscreen, and native ISO.
 
