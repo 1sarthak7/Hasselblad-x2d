@@ -165,8 +165,7 @@ Six key specs: resolution, sensor width, stabilization, weight, touchscreen, and
 ### Gallery
 
 Full-bleed imagery showcasing what the X2D 100C captures. Hover reveals EXIF-style metadata captions.
-
-Images scale subtly on hover with a `1.2s ease-out` transition for a tactile feel.
+.
 
 </td>
 </tr> f
