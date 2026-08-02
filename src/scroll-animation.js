@@ -7,7 +7,8 @@
 
 const TOTAL_FRAMES = 240;
 const BATCH_SIZE = 20;
-const FRAME_PATH = '/frames/frame-';
+const BASE = import.meta.env.BASE_URL || '/';
+const FRAME_PATH = `${BASE}frames/frame-`;
 const FRAME_EXT = '.jpg';
 
 /**
